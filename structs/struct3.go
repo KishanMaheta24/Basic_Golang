@@ -10,9 +10,9 @@ type Student struct {
 }
 
 type Marks struct {
-	Maths     int
-	Physics   int
-	Chemistry int
+	maths     int //private declaration which can only be used by parent struct
+	physics   int
+	chemistry int
 }
 
 type Student1 struct {
@@ -27,7 +27,7 @@ func main() {
 	v := Student{"Dummy", 2, 77, marks}
 	v1 := Student1{"Dummy", 2, 77, Marks{90, 80, 70}}
 	fmt.Println(v)
-	fmt.Println(v.Marks.Maths)
-	fmt.Println(v1.Maths)
+	fmt.Println(v.Marks.maths)
+	fmt.Println(v1.maths)
 
 }

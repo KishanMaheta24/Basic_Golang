@@ -15,7 +15,7 @@ var str string
 var num = 1
 var str1 = "string here"
 
-var x,y,z int=10,11,12
+var x,y,z=10,11,12
 
 var(
 	name="Go"
@@ -26,8 +26,10 @@ var(
 func main() {
 	//num2:=10 shorthand for declaring
 	//good practise to use := if we have value already present
+	first,sec:=1,3
 	a:=time.Now()
 	fmt.Println("Hello World",a)
-	fmt.Print(number," ",str," ",num," ",str1," ",name," ",age," ",isPresent," ",x,y,z)
+	fmt.Println(number," ",str," ",num," ",str1," ",name," ",age," ",isPresent," ",x,y,z)
+	fmt.Println(first,sec)
 	
 }
